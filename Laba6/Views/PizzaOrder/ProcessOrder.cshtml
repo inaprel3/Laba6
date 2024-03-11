@@ -1,0 +1,47 @@
+﻿<!-- Views/PizzaOrder/ProcessOrder.cshtml -->
+@model Laba6.Models.Product[]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered Products</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+            .product p {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+    </style>
+</head>
+<body>
+    <h1>Ordered Products</h1>
+    @foreach (var product in Model)
+    {
+        <div class="product">
+            <p>Name: @product.Name</p>
+            <p>Price: @product.Price</p>
+            <p>Quantity: @product.Quantity</p>
+        </div>
+    }
+</body>
+</html>

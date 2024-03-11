@@ -1,0 +1,55 @@
+﻿<!-- Views/PizzaOrder/Register.cshtml -->
+@model Laba6.Models.User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            text-align: center;
+            padding: 50px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        label {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="number"] {
+            font-size: 24px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+
+        button[type="submit"] {
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pizza Order Registration</h1>
+    <form method="post" action="/PizzaOrder/ConfirmOrder">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name"><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="Age"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
