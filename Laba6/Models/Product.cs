@@ -1,4 +1,3 @@
-﻿// Models/Product.cs
 namespace Laba6.Models
 {
     public class Product
