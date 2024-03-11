@@ -1,4 +1,3 @@
-﻿// Models/User.cs
 namespace Laba6.Models
 {
     public class User
